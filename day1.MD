@@ -32,3 +32,53 @@ esc :wq 退出操作界面
 
 ###心得
 学会了gitbase的基本用法，半只脚踏入了编程的大门，HTML和CSS的操作也通过青蛙游戏有了部分了解，开始逐渐上手。
+
+
+## 刘一凡
+
+### 笔记
+
+#### Git
+Git是一个分布式版本管理工具
+
+git init 初始化
+
+git add 添加到暂存区
+
+git commit 提交到仓库
+
+git branch 创建分支
+
+git chechout 切换分支
+
+git merge 合并分支
+
+git clone 克隆仓库
+
+git pull 拉取仓库
+
+git push 推送仓库
+
+git log git日志
+
+#### html
+html是一个标记语言
+
+<html> 根元素
+
+<head> 文件头
+
+<title> 标题
+
+<body> 页面内容
+
+<h1> 大标题
+
+<p> 段落
+
+<!-- -->注释
+
+如果浏览器不支持js，那么注释中的脚本就会当成注释的一部分不会执行，反之则可以执行。
+
+### 心得
+平静的一天，基本上都是一些背诵内容。
