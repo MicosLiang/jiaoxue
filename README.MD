@@ -1,13 +1,3 @@
-## new line
-- I change it at branch master 
-- I change it again at branch dev
-- new
-<<<<<<< HEAD
-MIAO MIAO MIAO=
-sui bian gai
-## you start here
-git push
-=
 # 兰州大学2022军训记者排网络技术部门军训作业仓库
 
 ## 说明
@@ -16,6 +6,9 @@ git push
 
 - 合并时不能删除别人的代码
 
+- 不要随意push
+
+- 不要改动此文件
 
 ### 9.5
 
