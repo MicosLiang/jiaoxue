@@ -1,8 +1,0 @@
-git add 添加到暂存区
-git commit 提交到仓库
-git branch 创建分支
-git chechout 切换分支
-git clone 克隆仓库
-git pull 拉取仓库
-git push 推送仓库
-git log git日志

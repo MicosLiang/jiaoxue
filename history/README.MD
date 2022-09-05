@@ -1,12 +1,9 @@
-# 兰州大学2022军训记者排网络技术部门军训作业仓库
+# hello world
 
-<<<<<<< HEAD
 <<<<<<< HEAD
 ##new line
 - I change it at branch dev
 - I change it at branch master 
-- hello world
-
 - I change it again at branch dev
 dkssjkgrn
 ## new line
@@ -25,18 +22,12 @@ sui bian gai
 ## you start here
 - I change it in at branch dev
 - hello by YYDH
-=======
-## 说明
->>>>>>> 0074a09294ecdec58ac0e04452832240be83d3d7
 
-- 每天的作业和心得在这个仓库提交
 
-- 合并时不能删除别人的代码
-
-## 每日任务
-
-### 9.5
-
-- 将今天的笔记，包括Html和GIT，写到day1.MD中
-- 将今天的心得（50字）写到day1.MD中
-- 看我的示例
+- I change it again at branch dev
+MIAO MIAO MIAO
+保洋哥哥好帅
+保洋哥哥好帅
+保洋哥哥好帅
+保洋哥哥好帅
+>>>>>>> b206d0a47d9ac09dcb74ebff421e8b97b0bfcaf9
