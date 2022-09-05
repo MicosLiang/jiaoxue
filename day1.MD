@@ -64,17 +64,17 @@ git log git日志
 #### html
 html是一个标记语言
 
-<html> 根元素
+html 根元素
 
-<head> 文件头
+head 文件头
 
-<title> 标题
+title 标题
 
-<body> 页面内容
+body 页面内容
 
-<h1> 大标题
+h1 大标题
 
-<p> 段落
+p 段落
 
 如果浏览器不支持js，那么注释中的脚本就会当成注释的一部分不会执行，反之则可以执行。
 
