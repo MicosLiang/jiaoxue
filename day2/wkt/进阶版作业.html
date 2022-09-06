@@ -1,0 +1,126 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="utf-8">
+		<title>我的军训心得</title>
+		<style>
+		.box {
+		  display: flex;
+		  flex-wrap: wrap;
+		  align-content: space-between;
+		}
+		
+		.column {
+		  flex-basis: 100%;
+		  display: flex;
+		  justify-content: space-between;
+		}
+		.fast{
+			display: flex;
+			justify-content: center;
+			align-items: center;
+		}
+		.btn{
+		    width:100%;
+		    height:100%;
+			background-color: chocolate;
+			border-style:none;
+		}
+		.srl{
+			display: flex;
+			justify-content:space-around;
+			justify-items: center;			
+		}
+		.serch {
+		    height: 40px;
+		    width: 250px;
+		    float: left;
+		    padding: 0 8px;
+		    outline: none;
+		    background-color: #f2f2f5;
+		    border:none;
+		    border-radius: 10px;
+		}
+			.pic {
+		align-items: center;
+		height: 30px;
+		width: 30px;
+		float: right;
+		padding-top: 5px;
+	}
+	.pic img{
+		height: 30px;
+		width: 30px;
+}
+		</style>
+	</head>
+	<body style="background-color: chocolate;">
+		<div class="box">
+				<div class="fast">
+					<h1 style="justify-self: center; color:aquamarine; wight=20vw;">王凯韬的军训心得</h1>
+				</div>
+				<div class="fast" style="justify-content: space-around;">
+					<table border="1" style="width: 70vw;" height="300px">
+						<tr>
+						  <td>5</td>
+						  <td>6</td>
+						  <td>7</td>
+						  <td>8</td>
+						  <td>9</td>
+						  <td>10</td>
+						  <td>11</td>
+						</tr>
+						<tr>
+						  <td>12</td>
+						  <td>13</td>
+						  <td>14</td>
+						  <td>15</td>
+						  <td>16</td>
+						  <td>17</td>
+						  <td>18</td>
+						</tr>
+							<td>19</td>
+							<td>20</td>
+							<td><input type="button" value="点击查看心得" onclick="newherf()" class="btn"/></td>
+							<td></td>
+							<td></td>
+							<td></td>
+							<td></td>
+						</tr>
+						</table>
+				</div>
+			<div class="fast" style="margin-left: 30vw;">
+				<div>
+					<img src="17118fe1726d4717accf309577454a79.jpeg" / style="width: 100%;height: 300px;">
+				</div>
+				<div>
+					<p id=none></p>
+					<div class="srl">
+					<button type="button" onclick="myFunction()">点我</button>
+					</div>
+					<div class="srl">
+					<button type="button" onclick="appear()">点它没用，点我</button>
+					</div>
+				</div>
+			</div>
+			<div class="box">
+				<input type="text" placeholder="并没有什么用的搜索栏" class="serch"></input>
+				<div class="pic"><a href="#"><img src="搜索.png" alt=""></a></div>
+			</div>
+		</div>
+		<script>
+		function myFunction()
+		{
+			alert("你被骗了！")
+		}
+		function newherf()
+		{
+			window.open("https://www.bilibili.com/video/BV1GJ411x7h7?spm_id_from=333.337.search-card.all.click")
+		}
+		function appear()
+		{
+			document.getElementById("none").innerHTML="我的军训心得就是没有心得";
+		}
+		</script>
+	</body>
+</html>
