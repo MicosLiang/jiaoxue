@@ -3,18 +3,18 @@
 
 ### 笔记
 
--checkout dev/master
--merge dev合并
--cat filename
--ssh -T git@giyhub.com
--git config --global user.name "Your Name"账号
--git config --global user.email "email@example.com"
--cd打开
--1.pull
--2.vim filename
--3.add .
--4.commit
--5.push(交作业
+- checkout dev/master
+- merge dev合并
+- cat filename
+- ssh -T git@giyhub.com
+- git config --global user.name "Your Name"账号
+- git config --global user.email "email@example.com"
+- cd打开
+- 1.pull
+- 2.vim filename
+- 3.add .
+- 4.commit
+- 5.push(交作业
 
 ### 心得
 没有及时问，想自己看教程结果看到奇怪的地方，有点浪费精力，如果纯粹git只是工具把代码背下来就好了。有点浪费时间，好困，对不起。
