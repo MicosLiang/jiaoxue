@@ -1,0 +1,197 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" type="text/css" href="mystyle.css">
+    <style type="text/css">
+        body {
+           font-size: 25px;
+           font-family: "宋体";
+           color: #ffffff;
+        }
+      
+        .box {
+           width:100%;
+           height: 960px;
+           display: flex;
+        }
+        
+        .hidden {
+               display: none;
+           }
+           .show {
+               display: block;
+           }
+    
+         div {
+            display: flex;
+             font-size: 25px;
+            font-family: "宋体";
+            color: #ffffff;
+         }
+     </style>
+    <title>兰大的军训</title>
+</head>
+<body>
+    <div style="flex-direction: column;width:100%;">
+       <div style="justify-content:center">       
+         <font size="7" >
+            <h1 >兰大军训</h1>
+        </font>
+        </div>
+
+    <div>
+        <input id="btn" type="button" value="戳我查看心得与体会">
+        </div>
+        <!-- <div id="box1">ESlint 查询代码规范的工具</div> -->
+        <div class="box">
+            <div style="position: absolute;">
+                <img src="p1.jpeg" style="width: 100vw;height: 960px">
+            </div>
+            <div style="font-size: 20px;z-index: 1;width: 800px;color:black"id="box1"class ='hidden'>
+                骄阳烈日，萃英山下的学子们正体验着军训的充实与欢乐（doge)。
+                <br>
+                西北的青年啊，莫要再耽搁~~
+            </div>
+        </div>
+        <div class="box">
+            <div style="position: absolute;z-index: -1">
+                <img src="p3.jpeg" style="width: 100vw;height: 960px">
+            </div>
+        </div> 
+        <br>
+     <!-- <p>-------------------------我是分割线---------------------------------------------------------------------------------------</p> -->
+     <div><h4>军训之记者排：</h4></div>
+     <div><input id="btn2" type="button" value="戳我查看心得与体会">
+     </div>
+    <div class="box">
+        <div style="position: absolute;z-index: -1">
+            <img src="p2.jpeg" style="width: 100vw;height: 960px">
+        </div>
+        <div style="font-size: 20px;z-index: 1;width: 800px;"id="box2" class ='hidden'>
+            记者排是很累的，因为它占据了午休以及夜晚的时间。
+            <br>
+            记者排是很好玩的，因为有很多有趣小伙伴和善于帮忙、既严厉又温和的学长学姐。
+        </div>
+     </div>
+     <div style=" width:100%;height: 100px;align-items: center;">
+        <div>
+            -------------------------我是奇怪的分割线--------------------------------------
+        </div>
+     </div>
+     <div class="box">
+        <div style="position: absolute;z-index: -1">
+            <img src="p4.jpeg" style="width: 100vw;height: 960px">
+        </div>
+     </div>
+
+    <div style="flex-direction: column;">
+        <div >
+            <p>图片与来源:</p>
+         </div>
+     <ol>
+        <li>
+            <div style="display: flex;align-items: center;">
+                <div>p1</div>
+                <div><img src="p1.jpeg"  alt="p1list" width="150vw" height="100vh"style="flex-direction: row;"></div>
+                <div>萃英在线微信公众号</div>
+            </div>
+        </li> 
+        <li>
+            <div style="display: flex;align-items: center;">
+                <div>p2</div>
+                <div><img src="p2.jpeg"  alt="p1list" width="150vw" height="100vh"style="flex-direction: row;"></div>
+                <div>萃英在线微信公众号</div>
+            </div>
+        </li> 
+        <li>
+            <div style="display: flex;align-items: center;">
+                <div>p3</div>
+                <div><img src="p3.jpeg"  alt="p1list" width="150vw" height="100vh"style="flex-direction: row;"></div>
+                <div>萃英在线微信公众号</div>
+            </div>
+        </li> 
+        <li>
+            <div style="display: flex;align-items: center;">
+                <div>p4</div>
+                <div><img src="p4.jpeg"  alt="p1list" width="150vw" height="100vh"style="flex-direction: row;"></div>
+                <div>萃英在线微信公众号</div>
+    
+            </div>
+        </li> 
+        </ol>  
+    </div>
+    <div style="align-items: center;">
+        <a href="https://dxs.moe.gov.cn/zx/xyh/xyh/lzdxcyzx/">
+            <button style="width: 30vw;height: 20hw;">戳我！进入兰州大学萃英在线</button>
+        </a>
+    </div>
+        <div style="justify-content:center">
+            <div>
+                <p>友情链接</p>
+            </div>
+            <div >
+                <table border="1" style="width: 30vw;height: 5 vh ;">
+                    <tr>
+                    <td><a href="https://yx.lzu.edu.cn/lzuzsb/stuweb/index/toIndex">兰大本科网</a></td>
+                    <td><a href="https://www.lzu.edu.cn/">兰大官网</a></td>
+                        <td><a href="http://my.lzu.edu.cn:8080/login?service=http://my.lzu.edu.cn">兰大个人工作台</a></td> 
+                    </tr>
+                </table>
+            </div>
+            <div>
+                <p>         </p>
+            </div>
+        </div>
+        
+        
+        </div>
+</body>
+<script>
+    //1 获取元素
+    var btn = document.getElementById('btn');
+    var btn2 = document.getElementById('btn2');
+    
+    var box1 = document.getElementById('box1');
+    var box2 = document.getElementById('box2');
+    var isshow = false
+    var isshow2 = false;
+    // 2 给按钮注册点击事件
+    btn.onclick = function(){
+        //当前box 是显示隐藏
+        if(isshow){
+        // 3 控制div的显示隐藏
+         box1.className ='hidden';
+         //修改按钮上的文字
+         btn.value = '戳我查看心得与体会';
+         isshow = false;
+        }else{
+         // 3 控制div的显示隐藏
+         box1.className ='show';
+         //修改按钮上的文字
+         //在事件处理函数中 this-- 事件源 触发事件的对象
+         btn.value = '隐藏';
+         isshow = true;
+        }     
+    };
+    btn2.onclick = function(){
+        //当前box 是显示隐藏
+        if(isshow2){
+        // 3 控制div的显示隐藏
+         box2.className ='hidden';
+         //修改按钮上的文字
+         btn2.value = '戳我查看心得与体会';
+         isshow2 = false;
+        }else{
+         // 3 控制div的显示隐藏
+         box2.className ='show';
+         //修改按钮上的文字
+         //在事件处理函数中 this-- 事件源 触发事件的对象
+         btn2.value = '隐藏';
+         isshow2 = true;
+        }     
+    };
+    </script>
+</html>
