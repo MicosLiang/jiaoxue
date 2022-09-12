@@ -25,6 +25,6 @@ def login(request):
     except Exception as e:  # 用户不存在
         ans = {
             'status_code': -1,
-            'ans': 'user not existence',
+            'ans': 'user not existed',
         }
     return HttpResponse(json.dumps(ans))
