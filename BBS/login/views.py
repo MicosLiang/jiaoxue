@@ -1,0 +1,30 @@
+from django.shortcuts import render
+from django.http import HttpResponse
+from . import admin
+import json
+
+
+# Create your views here.
+
+def login(request):
+    try:
+        data = json.loads(request.body)
+        un = data.get('username')  # 获取用户输入的用户名
+        pw = data.get('password')  # 获取用户输入的密码
+        user = admin.models.user.objects.get(username=un)  # 从数据库中得到对应用户的密码
+        if pw == user.password:  # 两个密码相同，登录成功
+            ans = {
+                'status_code': 200,
+                'ans': 'success',
+            }
+        else:  # 反之不成功
+            ans = {
+                'status_code': -1,
+                'ans': 'wrong password',
+            }
+    except Exception as e:  # 用户不存在
+        ans = {
+            'status_code': -1,
+            'ans': 'user not existence',
+        }
+    return HttpResponse(json.dumps(ans))
