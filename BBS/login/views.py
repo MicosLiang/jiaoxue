@@ -18,7 +18,7 @@ def login(request):
                 'status_code': 200,
                 'ans': 'success',
             }
-            user.lastTime = now
+            user.save()
         else:  # 反之不成功
             ans = {
                 'status_code': -1,

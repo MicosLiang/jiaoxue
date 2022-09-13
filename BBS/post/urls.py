@@ -19,5 +19,6 @@ from . import views
 
 urlpatterns = [
     path('admin/', admin.site.urls),
-    path('post', views.post)
+    path('post', views.post),
+    path('createPost', views.createPost)
 ]
