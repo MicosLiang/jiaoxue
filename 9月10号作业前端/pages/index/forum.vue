@@ -32,11 +32,15 @@
 						 text:'今天是九月十看被罚款',
 					 }
 				 ],
-				 datalist:[]
+				 username: ''
 			}
 		},
-		onShow(){
+		onLoad(res){
+			this.username = res.username
 			this.getData()
+		},
+		onShow(){
+			
 		},
 		methods: {
 			post(){
@@ -48,17 +52,12 @@
 			getData(){
 				let that = this
 				uni.request({
-					url:'',
+					url:'http://127.0.0.1:8000/post/post',
 					method:'GET',
-					header:{
-						'Content-Type':''
-					},
-					data:{
-						text:''
-					},
-					succes:(res) => {
-						console.log(res.data)
-						that.dataList = res.data.data.text
+					success:(res) => {
+						console.log("success get post data")
+						that.dataList = res.data.text
+						that.data = that.data.concat(res.data.text)
 					}
 				})
 			}

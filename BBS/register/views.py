@@ -6,9 +6,8 @@ import json
 
 # Create your views here.
 def register(request):
-    data = json.loads(request.body)
-    un = data.get('username')
-    pw = data.get('password')
+    un = request.GET.get('username')
+    pw = request.GET.get('password')
     try:
         userNew = admin.models.user.objects.get(username=un)
         ans = {

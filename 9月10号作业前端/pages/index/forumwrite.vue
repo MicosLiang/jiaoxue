@@ -13,7 +13,8 @@
 	export default {
 		data() {
 			return {
-			
+				text :'http://127.0.0.1:8000/post/createPost',
+				username:''
 			}
 		},
 		methods: {
@@ -31,6 +32,9 @@
 							})
 						}
 					}
+				})
+				uni.navigateTo({
+					url:'success'
 				})
 			}
 		}

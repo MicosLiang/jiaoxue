@@ -8,9 +8,8 @@ import datetime
 
 def login(request):
     try:
-        data = json.loads(request.body)
-        un = data.get('username')  # 获取用户输入的用户名
-        pw = data.get('password')  # 获取用户输入的密码
+        un = request.GET.get('username')  # 获取用户输入的用户名
+        pw = request.GET.get('password')  # 获取用户输入的密码
         user = admin.models.user.objects.get(username=un)  # 从数据库中得到对应用户的密码
         now = datetime.datetime.now()
         if pw == user.password:  # 两个密码相同，登录成功

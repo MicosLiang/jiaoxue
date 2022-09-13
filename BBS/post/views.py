@@ -8,9 +8,8 @@ from . import createRandon
 # Create your views here.
 def createPost(request):
     try:
-        data = json.loads(request.body)
-        un = data.get('username')
-        post = data.get('post')
+        un = request.GET.get('username')
+        post = request.GET.get('text')
         now = datetime.datetime.now()
         userNew = admin.models.user.objects.get(username=un)
         loginTime=localtime(userNew.loginTime)#转化为本地时间
@@ -50,8 +49,8 @@ def post(request):
         text=[]
         for each in dat:
             e={
-                'username':each.username,
-                'post':each.content
+                'name':each.username,
+                'text':each.content
             }
             text.append(e)
         ans={
