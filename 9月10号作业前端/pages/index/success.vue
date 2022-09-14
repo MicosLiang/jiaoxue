@@ -8,17 +8,21 @@
 	export default {
 		data() {
 			return {
-
+				username:''
 			}
+		},
+		onLoad(res) {
+			this.username=res.username
 		},
 		onShow() {
 			this.jumpToForumTime()
 		},
 		methods: {
 			jumpToForumTime() {
+				let that=this
 				setTimeout(() => {
 					uni.redirectTo({
-						url: 'forum',
+						url: 'forum?username='+that.username,
 					});
 				}, 1000)
 			},

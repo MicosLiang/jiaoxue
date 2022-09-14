@@ -13,29 +13,36 @@
 	export default {
 		data() {
 			return {
-				text :'http://127.0.0.1:8000/post/createPost',
+				text :'',
 				username:''
 			}
 		},
+		onLoad(res){
+			this.username = res.username
+
+		},
 		methods: {
 			submit(){
+				let that=this
 				uni.request({
-					url:'',
+					url:'http://127.0.0.1:8000/post/createPost',
 					method:'GET',
 					data:{
-						text : this.text
+						text : this.text,
+						username:this.username
 					},
 				    success: (res) =>{
+						console.log(res.data.status_code)
 						if(res.data.status_code == 200){
 							uni.navigateTo({
-								url:"success"
+								url:"success?username="+that.username
 							})
 						}
 					}
 				})
-				uni.navigateTo({
-					url:'success'
-				})
+				// uni.navigateTo({
+				// 	url:'success'
+				// })
 			}
 		}
 	}

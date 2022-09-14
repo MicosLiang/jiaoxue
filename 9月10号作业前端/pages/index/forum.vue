@@ -44,9 +44,9 @@
 		},
 		methods: {
 			post(){
-				console.log('1');
+				let that = this
 				uni.navigateTo({
-					url:"forumwrite"
+					url:'forumwrite?username='+this.username
 				})
 			},
 			getData(){
@@ -56,7 +56,6 @@
 					method:'GET',
 					success:(res) => {
 						console.log("success get post data")
-						that.dataList = res.data.text
 						that.data = that.data.concat(res.data.text)
 					}
 				})
