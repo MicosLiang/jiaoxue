@@ -10,6 +10,8 @@ def createPost(request):
     try:
         un = request.GET.get('username')
         post = request.GET.get('text')
+        print(un)
+        print(post)
         now = datetime.datetime.now()
         userNew = admin.models.user.objects.get(username=un)
         loginTime=localtime(userNew.loginTime)#转化为本地时间
@@ -35,6 +37,7 @@ def createPost(request):
                 "status_code" : -2,
                 'Info':'login-time-out'
             }
+            print('login-time-out')
             return(HttpResponse(json.dumps(ans)))
     except Exception as e:
         ans = {
